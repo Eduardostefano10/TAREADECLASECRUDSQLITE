@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fragment_padding">16dp</dimen>
+    <dimen name="table_margin">8dp</dimen>
+</resources>
