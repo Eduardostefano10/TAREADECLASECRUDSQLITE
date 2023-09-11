@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "mi_base_de_datos";
+    private static final String DATABASE_NAME = "school.db";
     private static final int DATABASE_VERSION = 2;
 
     // Sentencia SQL para crear la tabla "Carrera"
