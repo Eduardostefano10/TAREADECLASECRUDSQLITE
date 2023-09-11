@@ -33,7 +33,7 @@ import java.util.List;
  */
 public class CareerFragment extends Fragment {
 
-    private Button btnAgregar;
+   // private Button btnAgregar;
     private CarreraDataSource carreraDataSource;
     private TableLayout tableLayout;
 
@@ -83,14 +83,9 @@ public class CareerFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_career, container, false);
 
-        btnAgregar = view.findViewById(R.id.btnAddCareer);
+      //  btnAgregar = view.findViewById(R.id.btnAddCareer);
 
-        btnAgregar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mostrarFormulario();
-            }
-        });
+
 
         // Inicializar y abrir la base de datos
         carreraDataSource = new CarreraDataSource(requireContext());

@@ -1,38 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.FormAddCareerFragment"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    tools:context=".view.FormAddCareerFragment">
 
-    <!-- Título "add Carreras" -->
+    <!-- Título "Agregando Carreras" -->
     <TextView
         android:id="@+id/tituloAddEdit"
+        style="@style/TableTitleStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agregando Carreras:"
-        style="@style/TableTitleStyle"
-        android:layout_gravity="start"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginTop="16dp"
+        android:text="AÑADE UNA CARRERA"
+        android:textColor="#1227D5"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- ImageView para la imagen de carrera -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/carrera"
+        app:layout_constraintTop_toBottomOf="@+id/tituloAddEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCareer"
+        android:layout_marginTop="16dp" />
+
+    <!-- EditText para la Carrera -->
     <EditText
         android:id="@+id/editTextCareer"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Carrera"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:textColor="@color/black"/>
+        android:hint="Ingresa una Carrera"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- RadioGroup para el Estado -->
     <RadioGroup
         android:id="@+id/radioGroupEstado"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:visibility="gone">
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCareer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
 
         <RadioButton
             android:id="@+id/radioButtonActiva"
@@ -47,13 +71,18 @@
             android:text="Inactiva" />
     </RadioGroup>
 
-
+    <!-- Button para Agregar -->
     <Button
         android:id="@+id/btnAgregar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Agregar"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Añadir"
+        android:background="#1227D5"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupEstado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

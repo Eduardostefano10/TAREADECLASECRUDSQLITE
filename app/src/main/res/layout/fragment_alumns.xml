@@ -7,24 +7,25 @@
 
     <!-- Título "Alumnos" -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alumnos"
-        style="@style/TableTitleStyle"
-        android:layout_gravity="start"
-        android:layout_marginStart="16dp"/>
-
-    <!-- Botón "add" -->
-    <Button
-        android:id="@+id/btnAddAlumns"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add"
-        style="@style/AddButtonStyle"
-        android:layout_gravity="end"
-        android:layout_marginEnd="16dp"/>
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
 
     <!-- Tabla de datos -->
+
+    <TextView
+        style="@style/TableTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:gravity="center"
+        android:text="LISTA DE ALUMNOS"
+        android:textColor="#1227D5" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -70,7 +71,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Opciones"
+
                     android:textSize="12dp"
                     android:gravity="center"
                     android:padding="8dp"

@@ -10,11 +10,6 @@
         android:id="@+id/bottom_alumns"
         android:title="Agregar Alumno"
         android:icon="@drawable/baseline_person_add_24"/>
-
-    <item
-        android:title=""
-        android:enabled="true"/>
-
     <item
         android:id="@+id/bottom_carreras"
         android:title="Listar Carreras"

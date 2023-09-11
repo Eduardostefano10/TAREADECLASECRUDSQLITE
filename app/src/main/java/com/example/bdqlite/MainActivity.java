@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     BottomNavigationView bottomNavigationView;
     FragmentManager fragmentManager;
     Toolbar toolbar;
-    FloatingActionButton fab;
+   // FloatingActionButton fab;
 
 
 
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
 
-        fab = findViewById(R.id.fab);
+       // fab = findViewById(R.id.fab);
 
         setSupportActionBar(toolbar);
 
@@ -90,12 +90,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
+      /*
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mostrarFormulario();
             }
-        });
+        });*/
 
 
 
